@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreedilyDone | Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/GD_LOGO.png" alt="GreedilyDone Logo">
+        <h2><span>Greedily</span>Done</h2>
+      </div>
+
+      <p class="menu-title">MENU</p>
+
+      <nav class="nav-menu">
+        <a href="dashboard.html" class="active"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+        <a href="tasks.html"><i class="fa-solid fa-square-check"></i> Task <span>15</span></a>
+        <a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a>
+        <a href="notes.html"><i class="fa-solid fa-note-sticky"></i> Notes</a>
+        <a href="workspace.html"><i class="fa-solid fa-users"></i> Workspace</a>
+      </nav>
+
+      <p class="menu-title general">GENERAL</p>
+
+      <nav class="nav-menu">
+        <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="help.html"><i class="fa-solid fa-circle-question"></i> Help</a>
+        <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      </nav>
+
+      <div class="app-card">
+        <h3>GreedilyDone</h3>
+        <p>Smart task and schedule manager</p>
+        <button>Open App</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search Task">
+          <button><i class="fa-solid fa-sliders"></i></button>
+        </div>
+
+        <div class="top-actions">
+          <button><i class="fa-solid fa-envelope"></i></button>
+          <button class="notify"><i class="fa-solid fa-bell"></i></button>
+
+          <div class="profile">
+            <img src="assets/GD_LOGO.png" alt="Profile">
+            <div>
+              <h4>GreedilyDone</h4>
+              <p>user@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- DASHBOARD CONTENT -->
+      <section class="content-card">
+
+        <div class="dashboard-header">
+          <div>
+            <h1>Dashboard</h1>
+            <p>Plan, prioritize, and accomplish your tasks with ease.</p>
+          </div>
+
+          <div class="header-buttons">
+            <button class="primary"><i class="fa-solid fa-plus"></i> Add Task</button>
+            <button class="outline">Import Data</button>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <section class="stats-grid">
+          <div class="stat-card dark">
+            <div>
+              <h4>Total</h4>
+              <h2>68</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <h4>Completed</h4>
+              <h2>47</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <h4>Running</h4>
+              <h2>13</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <h4>Pending</h4>
+              <h2>2</h2>
+              <small>On discuss</small>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+
+          <!-- MEETING -->
+          <div class="meeting-card">
+            <div class="meeting-top">
+              <div class="icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <h4>Upcoming<br>Schedule</h4>
+              <p>Time:<br>02.00 pm - 04.00 pm</p>
+            </div>
+            <h3>DSA Project Consultation</h3>
+            <button>Start Meeting</button>
+          </div>
+
+          <!-- TEAM / TASKS -->
+          <div class="team-card">
+            <div class="section-title">
+              <h3>Smart Priority Tasks</h3>
+              <button><i class="fa-solid fa-plus"></i> Add Task</button>
+            </div>
+
+            <div class="team-list">
+              <div class="member-card">
+                <div class="avatar">R</div>
+                <div>
+                  <h4>Research Manuscript</h4>
+                  <p>Due soon · High priority</p>
+                </div>
+                <span>Pin</span>
+                <div class="bar"><small style="width:88%"></small></div>
+              </div>
+
+              <div class="member-card">
+                <div class="avatar">C</div>
+                <div>
+                  <h4>Class Schedule Review</h4>
+                  <p>No time conflict found</p>
+                </div>
+                <span>In Progress</span>
+                <div class="bar"><small style="width:72%"></small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMER -->
+          <div class="timer-card">
+            <h3>Time Tracker</h3>
+            <h2>02:34:40</h2>
+            <div class="timer-actions">
+              <button><i class="fa-solid fa-pause"></i></button>
+              <button class="stop"><i class="fa-solid fa-stop"></i></button>
+            </div>
+          </div>
+
+        </section>
+
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

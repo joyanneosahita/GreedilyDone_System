@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreedilyDone | Tasks</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="simple-page">
+    <h1>Task Organizer</h1>
+    <p>Organize tasks by date, time, priority, and pin the most important items to the top of the list.</p>
+    <div class="task-panel">
+      <div class="task-card task-form">
+        <h3>Add New Task</h3>
+        <div class="task-field">
+          <label>Task name</label>
+          <input type="text" placeholder="Enter task title">
+        </div>
+        <div class="task-field">
+          <label>Date</label>
+          <input type="date">
+        </div>
+        <div class="task-field">
+          <label>Time</label>
+          <input type="time">
+        </div>
+        <div class="task-field">
+          <label>Category</label>
+          <select>
+            <option>Work</option>
+            <option>Study</option>
+            <option>Personal</option>
+            <option>Routine</option>
+          </select>
+        </div>
+        <div class="task-field">
+          <label><input type="checkbox"> Pin to top</label>
+        </div>
+        <button class="primary">Add Task</button>
+      </div>
+
+      <div class="task-grid">
+        <div class="task-card pinned">
+          <h4>Prepare project roadmap</h4>
+          <p>Due: 2026-05-17 · 09:00 AM · Work</p>
+          <span class="workspace-chip">Pinned</span>
+        </div>
+        <div class="task-card pinned">
+          <h4>Client call recap</h4>
+          <p>Due: 2026-05-17 · 11:30 AM · Meeting</p>
+          <span class="workspace-chip">Pinned</span>
+        </div>
+        <div class="task-card">
+          <h4>Review notes for design</h4>
+          <p>Due: 2026-05-18 · 02:00 PM · Study</p>
+        </div>
+        <div class="task-card">
+          <h4>Buy office supplies</h4>
+          <p>Due: 2026-05-18 · 05:00 PM · Personal</p>
+        </div>
+      </div>
+    </div>
+    <a class="back-link" href="dashboard.html">Back to Dashboard</a>
+  </div>
+</body>
+</html>

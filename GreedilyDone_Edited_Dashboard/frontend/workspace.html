@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreedilyDone | Workspace</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <style>
+    .workspace-stats-grid .stat-card {
+      min-height: 80px;
+      padding: 10px 8px;
+    }
+    .workspace-stats-grid .stat-card h4 {
+      font-size: 10px;
+      margin-bottom: 2px;
+    }
+    .workspace-stats-grid .stat-card h2 {
+      font-size: 24px;
+    }
+    .workspace-stats-grid .stat-card small {
+      font-size: 8px;
+    }
+    .workspace-stats-grid .stat-card > i {
+      width: 22px;
+      height: 22px;
+      font-size: 12px;
+    }
+    .workspace-grid {
+      gap: 8px !important;
+    }
+    .workspace-grid .team-card {
+      padding: 12px 10px !important;
+    }
+    .workspace-grid .timer-card {
+      padding: 12px 10px !important;
+    }
+    .workspace-grid .section-title h3 {
+      font-size: 16px !important;
+    }
+    .workspace-grid .team-list {
+      margin-top: 10px !important;
+      gap: 12px !important;
+    }
+    .workspace-grid .member-card {
+      min-height: 80px !important;
+      padding: 10px 8px !important;
+      gap: 8px !important;
+    }
+    .workspace-grid .member-card h4 {
+      font-size: 12px !important;
+    }
+    .workspace-grid .member-card p {
+      font-size: 9px !important;
+    }
+    .workspace-grid .avatar {
+      width: 36px !important;
+      height: 36px !important;
+      font-size: 11px !important;
+    }
+    .workspace-grid .timer-card h3 {
+      font-size: 16px !important;
+      margin-bottom: 8px !important;
+    }
+    .workspace-grid .timer-item {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      padding: 6px !important;
+    }
+    .workspace-grid .timer-item i {
+      font-size: 18px !important;
+    }
+    .workspace-grid .timer-item h4 {
+      font-size: 12px !important;
+      margin-bottom: 2px !important;
+    }
+    .workspace-grid .timer-item p {
+      font-size: 9px !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/GD_LOGO.png" alt="GreedilyDone Logo">
+        <h2><span>Greedily</span>Done</h2>
+      </div>
+
+      <p class="menu-title">MENU</p>
+
+      <nav class="nav-menu">
+        <a href="dashboard.html"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+        <a href="tasks.html"><i class="fa-solid fa-square-check"></i> Task <span>15</span></a>
+        <a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> Calendar</a>
+        <a href="notes.html"><i class="fa-solid fa-note-sticky"></i> Notes</a>
+        <a href="workspace.html" class="active"><i class="fa-solid fa-users"></i> Workspace</a>
+      </nav>
+
+      <p class="menu-title general">GENERAL</p>
+
+      <nav class="nav-menu">
+        <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        <a href="help.html"><i class="fa-solid fa-circle-question"></i> Help</a>
+        <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      </nav>
+
+      <div class="app-card">
+        <h3>GreedilyDone</h3>
+        <p>Smart task and schedule manager</p>
+        <button>Open App</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search Workspace">
+          <button><i class="fa-solid fa-sliders"></i></button>
+        </div>
+
+        <div class="top-actions">
+          <button><i class="fa-solid fa-envelope"></i></button>
+          <button class="notify"><i class="fa-solid fa-bell"></i></button>
+
+          <div class="profile">
+            <img src="assets/GD_LOGO.png" alt="Profile">
+            <div>
+              <h4>GreedilyDone</h4>
+              <p>user@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- WORKSPACE CONTENT -->
+      <section class="content-card">
+
+        <div class="dashboard-header">
+          <div>
+            <h1>Customize Tasks, Schedules & Notes</h1>
+            <p>Choose colors, pin important items, and personalize your task and schedule workflow with smart note styling.</p>
+          </div>
+
+          <div class="header-buttons">
+            <button class="primary"><i class="fa-solid fa-paintbrush"></i> New Theme</button>
+            <button class="outline">Manage Colors</button>
+          </div>
+        </div>
+
+        <!-- WORKSPACE STATS -->
+        <section class="stats-grid workspace-stats-grid">
+          <div class="stat-card dark">
+            <div>
+              <h4>Task Types</h4>
+              <h2>12</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <h4>Schedule Rules</h4>
+              <h2>6</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <h4>Note Styles</h4>
+              <h2>4</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <h4>Color Themes</h4>
+              <h2>3</h2>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </section>
+
+        <section class="dashboard-grid workspace-grid">
+          <div class="team-card">
+            <div class="section-title">
+              <h3>Personalize Workflow</h3>
+              <button>Save</button>
+            </div>
+            <div class="team-list">
+              <div class="member-card">
+                <div class="avatar">T</div>
+                <div>
+                  <h4>Task Label Colors</h4>
+                  <p>Assign a unique color for urgent, work, and study tasks.</p>
+                </div>
+                <span class="workspace-chip">Tasks</span>
+              </div>
+              <div class="member-card">
+                <div class="avatar">S</div>
+                <div>
+                  <h4>Schedule themes</h4>
+                  <p>Define how schedule blocks appear on the calendar.</p>
+                </div>
+                <span class="workspace-chip">Schedule</span>
+              </div>
+              <div class="member-card">
+                <div class="avatar">N</div>
+                <div>
+                  <h4>Note categories</h4>
+                  <p>Choose colors for notes and label groups for quick scanning.</p>
+                </div>
+                <span class="workspace-chip">Notes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timer-card">
+            <h3>Color Presets</h3>
+            <div class="workspace-card">
+              <span class="workspace-chip">Green Focus</span>
+              <span class="workspace-chip">Sunset</span>
+              <span class="workspace-chip">Sky</span>
+              <span class="workspace-chip">Soft Gold</span>
+              <p>Mix task, schedule, and note colors into themes that keep your dashboard bright and easy to scan.</p>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>
